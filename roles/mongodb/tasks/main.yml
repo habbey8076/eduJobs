@@ -48,6 +48,7 @@
 - name: Create the application user
   mongodb_user:
     login_user: root
+    login_password: "{{ dbpass }}"
     name: "{{ appdbuser }}"
     password: "{{ appdbpass }}"
     database: "{{ dbname }}"
